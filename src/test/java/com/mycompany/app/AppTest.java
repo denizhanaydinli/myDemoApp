@@ -40,23 +40,32 @@ public class AppTest
 
 
     public void testFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertTrue(new App().search(array, 4));
+      ArrayList<String> array = new ArrayList<>(Arrays.asList("cab", "bfe", "cb", "da"));
+      assertTrue(new App().search(array, "ab","c"));
     }
 
     public void testNotFound() {
-      ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertFalse(new App().search(array, 5));
+      ArrayList<String> array = new ArrayList<>(Arrays.asList("dasd", "fasf", "dasd", "dasd"));
+      assertFalse(new App().search(array, "xxx","yyy"));
     }
 
     public void testEmptyArray() {
-      ArrayList<Integer> array = new ArrayList<>();
-      assertFalse(new App().search(array, 1));
+      ArrayList<String> array = new ArrayList<>();
+      assertFalse(new App().search(array, "asda","bvx"));
     }
 
     public void testNull() {
-      assertFalse(new App().search(null, 1));
+      assertFalse(new App().search(null, "gjg","hdfhd"));
     }
+
+    public void testTrueIntegerArray(){
+ ArrayList<String> array = new ArrayList<>(Arrays.asList("91", "bfe", "cb", "da"));
+
+	assertTrue(new App().search(array,"1","9"));
+
+
+
+}
 
 
 }
