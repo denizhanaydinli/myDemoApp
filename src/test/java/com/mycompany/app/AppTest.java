@@ -41,7 +41,7 @@ public class AppTest
 
     public void testFound() {
       ArrayList<String> array = new ArrayList<>(Arrays.asList("cab", "bfe", "cb", "da"));
-      assertTrue(new App().search(array, "ab","c"));
+      assertTrue(new App().search(array, "ca","b"));
     }
 
     public void testNotFound() {
@@ -61,7 +61,7 @@ public class AppTest
     public void testTrueIntegerArray(){
  ArrayList<String> array = new ArrayList<>(Arrays.asList("91", "bfe", "cb", "da"));
 
-	assertTrue(new App().search(array,"1","9"));
+	assertTrue(new App().search(array,"9","1"));
 
 
 
