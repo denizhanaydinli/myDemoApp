@@ -5,4 +5,4 @@ Arraylist in icinde 3. girilen stringin 2. girilen stringle merge edip 1. kısı
 
 [![Build Status](https://travis-ci.org/denizhanaydinli/myDemoApp.svg?branch=master)](https://travis-ci.org/denizhanaydinli/myDemoApp)
 
-demosite:  https://still-peak-87471.herokuapp.com/ 
+demosite:  https://still-peak-87471.herokuapp.com/compute 
