@@ -1,6 +1,3 @@
-
-  
-
 package com.mycompany.app;
 
 import static spark.Spark.*;
@@ -20,14 +17,11 @@ public class App
       System.out.println("inside search");
       if (array == null) return false;
 
-       String x=b+e;
+      String x = e + b;
 
       for (int elt=0; elt<array.size(); elt++) {
 
-
-
-
-        if (array.get(elt).equals(x)) return true;
+	if (array.get(elt).equals(x)) return true;
       }
       return false;
     }
@@ -55,13 +49,11 @@ public class App
 
 
           String input2 = req.queryParams("input2").replaceAll("\\s","");
-          int input2AsInt = Integer.parseInt(input2);
 
 
           String input3 = req.queryParams("input3").replaceAll("\\s","");
-          int input3AsInt = Integer.parseInt(input3);
 
-          boolean result = App.search(inputList, input2,input3);
+          boolean result = App.search(inputList, input2, input3);
 
          Map map = new HashMap();
           map.put("result", result);
